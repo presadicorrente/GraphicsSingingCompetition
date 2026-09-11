@@ -1,0 +1,30 @@
+<div class="singers-list">
+  <button
+    class="singer-card"
+    [class.selected]="selectedSinger === singer"
+    (click)="showSinger(singer)"
+    *ngFor="let singer of listOfSingers"
+  >
+    <div class="singer-number">
+      #{{ singer.numero }}
+    </div>
+
+    <div class="singer-info">
+      <div class="singer-name">
+        {{ singer.cantante }}
+      </div>
+
+      <div class="singer-song">
+        <span class="song-title">{{ singer.canzone }}</span>
+        <span class="separator">·</span>
+        <span class="original-artist">
+          {{ singer.artista_originale }}
+        </span>
+      </div>
+    </div>
+
+    <div class="singer-arrow">
+      →
+    </div>
+  </button>
+</div>

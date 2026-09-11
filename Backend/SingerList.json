@@ -1,0 +1,212 @@
+[
+  {
+    "numero": "01",
+    "cantante": "Marica Tonon",
+    "canzone": "Meraviglioso Amore Mio",
+    "artista_originale": "Arisa"
+  },
+  {
+    "numero": "02",
+    "cantante": "Ginevra Davanzo",
+    "canzone": "People Help The People",
+    "artista_originale": "Birdy"
+  },
+  {
+    "numero": "03",
+    "cantante": "Daniele Bolzonella",
+    "canzone": "Bravi Ragazzi",
+    "artista_originale": "Miguel Bosè"
+  },
+  {
+    "numero": "04",
+    "cantante": "Silvana Andreacchio",
+    "canzone": "Carosello d'amore",
+    "artista_originale": ""
+  },
+  {
+    "numero": "05",
+    "cantante": "Sandra Pavanello",
+    "canzone": "Sempre E Per Sempre",
+    "artista_originale": "Fiorella Mannoia"
+  },
+  {
+    "numero": "06",
+    "cantante": "Ottaviano Guzzo",
+    "canzone": "Il Vecchio E Il Bambino",
+    "artista_originale": "Francesco Guccini"
+  },
+
+  {
+    "numero": "07",
+    "cantante": "Felix Guevara",
+    "canzone": "Tenebra Chiara",
+    "artista_originale": ""
+  },
+  {
+    "numero": "08",
+    "cantante": "Vitantonio La Terza",
+    "canzone": "Eternamente",
+    "artista_originale": ""
+  },
+  {
+    "numero": "09",
+    "cantante": "Niccolò Foglia",
+    "canzone": "Cinecittà",
+    "artista_originale": ""
+  },
+  {
+    "numero": "10",
+    "cantante": "Hot Ice",
+    "canzone": "Portami Via Di Qua",
+    "artista_originale": ""
+  },
+  {
+    "numero": "11",
+    "cantante": "Maria Grazia Carraro",
+    "canzone": "La Prima Cosa Bella",
+    "artista_originale": "Malika Ayane"
+  },
+  {
+    "numero": "12",
+    "cantante": "Roberto Quintavalle",
+    "canzone": "Caruso",
+    "artista_originale": "Lucio Dalla"
+  },
+  {
+    "numero": "13",
+    "cantante": "Maria Buoso",
+    "canzone": "Skyfall",
+    "artista_originale": "Adele"
+  },
+  {
+    "numero": "14",
+    "cantante": "Giulia Grosso",
+    "canzone": "Everytime We Touch",
+    "artista_originale": "Cascada"
+  },{
+    "numero": "15",
+    "cantante": "Ghiroguido",
+    "canzone": "I Ricordi Del Cuore",
+    "artista_originale": "Amedeo Minghi"
+  },{
+    "numero": "16",
+    "cantante": "Eduardo Beltramini",
+    "canzone": "Here I Am",
+    "artista_originale": "Tom Odell"
+  },
+  {
+    "numero": "17",
+    "cantante": "Alberto Fraccaro",
+    "canzone": "Sono Solo Parole",
+    "artista_originale": "Noemi"
+  },
+  {
+    "numero": "18",
+    "cantante": "Hot Ice",
+    "canzone": "Come Loki",
+    "artista_originale": ""
+  },
+  {
+    "numero": "19",
+    "cantante": "Maria Grazia Carraro",
+    "canzone": "Grande Grande Grande",
+    "artista_originale": "Mina"
+  },
+  {
+    "numero": "20",
+    "cantante": "Gianni Frank",
+    "canzone": "My Way",
+    "artista_originale": "Frank Sinatra"
+  },
+  {
+    "numero": "21",
+    "cantante": "Roberto Quintavalle",
+    "canzone": "My Way",
+    "artista_originale": "Frank Sinatra"
+  },
+
+  {
+    "numero": "22",
+    "cantante": "Felix Guevara",
+    "canzone": "Perdere L'Amore",
+    "artista_originale": "Massimo Ranieri"
+  },
+  {
+    "numero": "23",
+    "cantante": "Maria Buoso",
+    "canzone": "Hurt",
+    "artista_originale": "Christina Aguilera"
+  },
+  {
+    "numero": "24",
+    "cantante": "Vitantonio La Terza",
+    "canzone": "Ma L'Amore No",
+    "artista_originale": ""
+  },
+  {
+    "numero": "25",
+    "cantante": "Ottaviano Guzzo",
+    "canzone": "Hotel Supramonte",
+    "artista_originale": "Fabrizio De André"
+  },
+  {
+    "numero": "26",
+    "cantante": "Giulia Grosso",
+    "canzone": "My Immortal",
+    "artista_originale": "Evanescence"
+  },
+  {
+    "numero": "27",
+    "cantante": "Sandra Pavanello",
+    "canzone": "La Sera Dei Miracoli",
+    "artista_originale": "Lucio Dalla"
+  },
+  {
+    "numero": "28",
+    "cantante": "Silvana Andreacchio",
+    "canzone": "Cada Mirada",
+    "artista_originale": ""
+  },
+  {
+    "numero": "29",
+    "cantante": "Daniele Bolzonella",
+    "canzone": "Viceversa",
+    "artista_originale": "Francesco Gabbani"
+  },
+  {
+    "numero": "30",
+    "cantante": "Eduardo Beltramini",
+    "canzone": "La Cura",
+    "artista_originale": "Giorgia"
+  },
+  {
+    "numero": "31",
+    "cantante": "Ginevra Davanzo",
+    "canzone": "Promettimi",
+    "artista_originale": "Elisa"
+  },
+  {
+    "numero": "32",
+    "cantante": "Alberto Fraccaro",
+    "canzone": "Vetrina Dell'Amore",
+    "artista_originale": ""
+  },
+  {
+    "numero": "33",
+    "cantante": "Marica Tonon",
+    "canzone": "Eppure Sentire",
+    "artista_originale": "Elisa"
+  },
+  {
+    "numero": "34",
+    "cantante": "Gianni Frank",
+    "canzone": "New York, New York",
+    "artista_originale": "Frank Sinatra"
+  },
+  {
+    "numero": "35",
+    "cantante": "Ghiroguido",
+    "canzone": "I Ricordi Del Cuore",
+    "artista_originale": "Amedeo Minghi"
+  }
+]

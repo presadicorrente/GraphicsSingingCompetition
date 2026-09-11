@@ -1,0 +1,37 @@
+services:
+  backend:
+    build: ./backend
+    container_name: graphics-backend
+    ports:
+      - "8080:8080"
+    env_file:
+      - .env
+    networks:
+      - appnet
+    volumes:
+    - ./backend:/backend
+    - /backend/node_modules
+    command: ["npx", "nodemon", "index.js"]
+
+  angular:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: frontend-graphic
+    ports:
+      - "4200:4200"
+    depends_on:
+      - backend
+    environment:
+      - NODE_ENV=development
+    networks:
+      - appnet
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+      - /app/.angular 
+
+
+networks:
+  appnet:
+    driver: bridge

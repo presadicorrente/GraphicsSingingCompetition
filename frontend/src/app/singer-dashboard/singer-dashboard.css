@@ -1,0 +1,338 @@
+.singers-list {
+  width: 100%;
+  max-width: 900px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   SCHEDA CANTANTE
+   ========================= */
+
+.singer-card {
+  position: relative;
+
+  width: 100%;
+  min-height: 78px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 14px 18px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+
+  background: #18181c;
+
+  color: white;
+
+  cursor: pointer;
+
+  text-align: left;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+
+  overflow: hidden;
+}
+
+
+/* piccola barra colorata */
+
+.singer-card::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  width: 5px;
+
+  background: linear-gradient(
+    180deg,
+    #94cb4a,
+    #eca669,
+    #b3468c
+  );
+}
+
+
+/* =========================
+   HOVER
+   ========================= */
+
+.singer-card:hover {
+  background: #202025;
+
+  border-color: rgba(148, 203, 74, 0.35);
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================
+   CLICK
+   ========================= */
+
+.singer-card:active {
+  transform: translateY(0);
+
+  background: #151518;
+}
+
+
+/* =========================
+   NUMERO
+   ========================= */
+
+.singer-number {
+  width: 65px;
+  min-width: 65px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #94cb4a;
+
+  font-size: 20px;
+  font-weight: 800;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* =========================
+   INFORMAZIONI
+   ========================= */
+
+.singer-info {
+  min-width: 0;
+
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+
+/* =========================
+   NOME
+   ========================= */
+
+.singer-name {
+  color: #ffffff;
+
+  font-size: 20px;
+  font-weight: 750;
+
+  line-height: 1.1;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* =========================
+   CANZONE
+   ========================= */
+
+.singer-song {
+  display: flex;
+  align-items: center;
+
+  min-width: 0;
+
+  font-size: 14px;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+}
+
+
+.song-title {
+  color: #eca669;
+
+  font-weight: 600;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.separator {
+  margin: 0 8px;
+
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
+.original-artist {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-weight: 500;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* =========================
+   FRECCIA
+   ========================= */
+
+.singer-arrow {
+  width: 35px;
+  min-width: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: rgba(255, 255, 255, 0.35);
+
+  font-size: 24px;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.singer-card:hover .singer-arrow {
+  color: #b3468c;
+
+  transform: translateX(4px);
+}
+
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 600px) {
+
+  .singers-list {
+    padding: 5px;
+    gap: 8px;
+  }
+
+  .singer-card {
+    min-height: 70px;
+
+    padding: 12px 14px;
+  }
+
+  .singer-number {
+    width: 50px;
+    min-width: 50px;
+
+    font-size: 17px;
+  }
+
+  .singer-name {
+    font-size: 17px;
+  }
+
+  .singer-song {
+    font-size: 13px;
+  }
+
+  .singer-arrow {
+    width: 25px;
+    min-width: 25px;
+
+    font-size: 20px;
+  }
+}
+
+/* =========================
+   BOTTONE SELEZIONATO
+   ========================= */
+
+.singer-card.selected {
+  background: linear-gradient(
+    90deg,
+    rgba(148, 203, 74, 0.16),
+    rgba(236, 166, 105, 0.08),
+    rgba(179, 70, 140, 0.08)
+  );
+
+  border-color: rgba(148, 203, 74, 0.65);
+
+  box-shadow:
+    0 0 0 1px rgba(148, 203, 74, 0.12),
+    0 8px 25px rgba(0, 0, 0, 0.3);
+
+  transform: translateX(5px);
+}
+
+
+/* barra laterale del selezionato */
+
+.singer-card.selected::before {
+  width: 7px;
+
+  background: linear-gradient(
+    180deg,
+    #94cb4a,
+    #eca669,
+    #b3468c
+  );
+
+  box-shadow:
+    0 0 12px rgba(148, 203, 74, 0.5);
+}
+
+
+/* numero del selezionato */
+
+.singer-card.selected .singer-number {
+  color: #ffffff;
+
+  text-shadow:
+    0 0 10px rgba(148, 203, 74, 0.5);
+}
+
+
+/* nome del selezionato */
+
+.singer-card.selected .singer-name {
+  color: #ffffff;
+}
+
+
+/* canzone */
+
+.singer-card.selected .song-title {
+  color: #eca669;
+}
+
+
+/* freccia */
+
+.singer-card.selected .singer-arrow {
+  color: #94cb4a;
+
+  transform: translateX(5px);
+}

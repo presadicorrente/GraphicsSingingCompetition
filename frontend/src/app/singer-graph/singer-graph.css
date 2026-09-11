@@ -1,0 +1,373 @@
+.stage {
+  position: fixed;
+  left: 0;
+  bottom: 50px;
+
+  width: 100%;
+  height: 140px;
+
+  pointer-events: none;
+
+  font-family: "Montserrat", "Arial", sans-serif;
+}
+
+/* =========================
+   LOWER THIRD
+   ========================= */
+
+.lower-third {
+  position: absolute;
+
+  left: 50px;
+  bottom: 0;
+
+  width: 820px;
+  height: 125px;
+
+  opacity: 0;
+
+  transform: translateX(-40px);
+
+  transition:
+    opacity 0.45s ease,
+    transform 0.55s cubic-bezier(0.22, 1, 0.36, 1);
+
+  filter: drop-shadow(0 12px 25px rgba(0, 0, 0, 0.4));
+}
+
+.lower-third.visible {
+  opacity: 1;
+
+  transform: translateX(0);
+}
+
+/* =========================
+   CONTENITORE
+   ========================= */
+
+.content {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+
+  background: rgba(15, 15, 18, 0.96);
+
+  border-radius: 0 16px 16px 0;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 10px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* =========================
+   BARRA LATERALE
+   ========================= */
+
+.edge {
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 8px;
+  height: 100%;
+
+  background: linear-gradient(
+    180deg,
+    #94cb4a 0%,
+    #eca669 50%,
+    #b3468c 100%
+  );
+
+  box-shadow:
+    0 0 14px rgba(148, 203, 74, 0.25);
+
+  z-index: 5;
+}
+
+/* =========================
+   LINEA SUPERIORE
+   ========================= */
+
+.content::after {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 115px;
+  right: 0;
+
+  height: 2px;
+
+  opacity: 0.85;
+}
+
+/* =========================
+   LOGO
+   ========================= */
+
+.badge {
+  position: relative;
+
+  width: 100px;
+  height: 100px;
+
+  margin-left: 18px;
+  margin-right: 23px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  border-radius: 14px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  overflow: hidden;
+}
+
+.badge::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(
+    135deg,
+    rgba(148, 203, 74, 0.13),
+    transparent 45%,
+    rgba(179, 70, 140, 0.13)
+  );
+}
+
+.badge-logo {
+  position: relative;
+
+  width: 80px;
+  height: 80px;
+
+  object-fit: contain;
+
+  z-index: 1;
+}
+
+/* =========================
+   BLOCCO TESTO
+   ========================= */
+
+.text-block {
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding-right: 35px;
+}
+
+/* =========================
+   NUMERO
+   ========================= */
+
+.meta-row {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 4px;
+}
+
+.number {
+  display: inline-flex;
+  align-items: center;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  letter-spacing: 1.8px;
+
+  color: #94cb4a;
+
+  text-transform: uppercase;
+}
+
+/* =========================
+   NOME CANTANTE
+   ========================= */
+
+.singer-name {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 36px;
+  line-height: 1.05;
+
+  font-weight: 800;
+
+  letter-spacing: -0.6px;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  text-shadow:
+    0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* =========================
+   CANZONE + ARTISTA
+   ========================= */
+
+.song-line {
+  display: flex;
+  align-items: center;
+
+  margin: 9px 0 0;
+
+  font-size: 18px;
+  line-height: 1;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+}
+
+.song-title {
+  color: #eca669;
+
+  font-weight: 600;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dot {
+  margin: 0 11px;
+
+  color: rgba(255, 255, 255, 0.35);
+
+  font-weight: 400;
+}
+
+.original-artist {
+  color: rgba(255, 255, 255, 0.7);
+
+  font-weight: 500;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 900px) {
+  .stage {
+    bottom: 35px;
+  }
+
+  .lower-third {
+    left: 25px;
+
+    width: calc(100% - 50px);
+
+    height: 115px;
+  }
+
+  .badge {
+    width: 88px;
+    height: 88px;
+
+    margin-left: 15px;
+    margin-right: 18px;
+  }
+
+  .badge-logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .singer-name {
+    font-size: 30px;
+  }
+
+  .song-line {
+    font-size: 16px;
+  }
+
+  .number {
+    font-size: 14px;
+  }
+}
+
+/* =========================
+   SCHERMI PICCOLI
+   ========================= */
+
+@media (max-width: 600px) {
+  .stage {
+    bottom: 20px;
+  }
+
+  .lower-third {
+    left: 15px;
+
+    width: calc(100% - 30px);
+
+    height: 100px;
+  }
+
+  .badge {
+    width: 75px;
+    height: 75px;
+
+    margin-left: 12px;
+    margin-right: 15px;
+
+    border-radius: 10px;
+  }
+
+  .badge-logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .text-block {
+    padding-right: 15px;
+  }
+
+  .singer-name {
+    font-size: 25px;
+  }
+
+  .song-line {
+    margin-top: 7px;
+    font-size: 14px;
+  }
+
+  .number {
+    font-size: 12px;
+    letter-spacing: 1.4px;
+  }
+
+  .dot {
+    margin: 0 7px;
+  }
+}

@@ -1,0 +1,23 @@
+<div class="stage">
+  <div class="lower-third" [class.visible]="visible" *ngIf="currentSinger">
+    <div class="edge"></div>
+
+    <div class="content">
+      <div class="badge">
+        <img src="width_206.jpeg" alt="" class="badge-logo" />
+      </div>
+
+      <div class="text-block">
+        <div class="meta-row">
+          <span class="number">#{{ currentSinger.numero }}</span>
+        </div>
+        <p class="singer-name">{{ currentSinger.cantante }}</p>
+        <p class="song-line">
+          <span class="song-title">{{ currentSinger.canzone }}</span>
+          <span class="dot">·</span>
+          <span class="original-artist">{{ currentSinger.artista_originale }}</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
