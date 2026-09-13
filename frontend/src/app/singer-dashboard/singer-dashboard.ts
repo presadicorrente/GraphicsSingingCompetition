@@ -26,14 +26,12 @@ export class SingerDashboard {
   ngOnInit() {
     this.singerService.getSingers().subscribe((data) => {
       this.listOfSingers = data;
-      console.log('Received singers:', this.listOfSingers);
       this.cdr.detectChanges();
     });
   }
 
 
   showSinger(_t3: Singer) {
-    console.log('Sending singer:', _t3);
     this.selectedSinger = _t3;
     this.singerService.sendSinger(_t3)
     this.cdr.detectChanges();
